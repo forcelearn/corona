@@ -1,0 +1,27 @@
+{
+  "name": "corona",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://forcelearn.github.io/corona/",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nforce": "^1.12.2",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
